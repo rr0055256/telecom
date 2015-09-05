@@ -1,0 +1,31 @@
+package com.jawa.scripts;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.jawa.pom.LoginPage;
+
+public class ValidLogin {
+	
+	public WebDriver;
+	@BeforeClass
+	public void openBrowser(){
+		WebDriver driver= new FirefoxDriver();
+		driver.get("http://demo.actitime.com");
+	}
+	
+	@AfterClass
+	public void close(){
+		driver.close
+	}
+	
+	@Test
+	public void test() {
+		LoginPage lp = new LoginPage(driver);
+	}
+}

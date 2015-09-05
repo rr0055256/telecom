@@ -1,0 +1,9 @@
+package com.jawa.scripts;
+
+import org.testng.annotations.Test;
+
+public class ValidLogin {
+  @Test
+  public void f() {
+  }
+}

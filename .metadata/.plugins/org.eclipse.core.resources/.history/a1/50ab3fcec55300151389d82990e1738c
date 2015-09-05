@@ -1,0 +1,28 @@
+package com.jawa.scripts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+import com.jawa.pom.BasePage;
+import com.jawa.pom.LoginPage;
+
+public class InvalidLogin {
+	WebDriver driver;
+	
+  @Test
+  public void f() {
+	  driver = new FirefoxDriver();
+	  driver.get("http://demo.actitime.com");
+  }
+  @BeforeClass
+  public void beforeClass() {
+  }
+
+  @AfterClass
+  public void afterClass() {
+  }
+
+}

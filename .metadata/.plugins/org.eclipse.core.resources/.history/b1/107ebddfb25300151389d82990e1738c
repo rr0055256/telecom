@@ -1,0 +1,15 @@
+package com.jawa.pom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+
+	//identifying web elements with find by annotation
+	
+	@FindBy(id="username")
+	private WebElement userName;
+	
+	@FindBy(xpath="//input[@class='textField']")
+	private WebElement password;
+}

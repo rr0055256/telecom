@@ -1,0 +1,10 @@
+package com.jawa.pom;
+
+import org.openqa.selenium.WebElement;
+
+public class BasePage {
+	
+	private WebElement logout;
+	
+	
+}

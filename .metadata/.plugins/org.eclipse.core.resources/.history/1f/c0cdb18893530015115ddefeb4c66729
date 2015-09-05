@@ -1,0 +1,42 @@
+package com.jawa.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+public class LoginPage {
+	
+	@FindBy(id="username")
+	private WebElement txbUserName;
+	
+	@FindBy(name="pwd")
+	private WebElement txbPassword;
+	
+	@FindBy(id="loginButton")
+	private WebElement btnlogin;
+	
+	@FindBy(xpath="//span[contains(text(),'invalid')]")
+	private WebElement errMsg;
+	
+	public LoginPage(WebDriver driver)
+	{
+	PageFactory.initElements(driver,this);
+	}
+	
+	public void login(String un,String pw)
+	{
+		txbUserName.sendKeys(un);
+		txbPassword.sendKeys(pw);
+		btnlogin.click();
+	}
+	
+	public void verifyErrormsg()
+	{
+		Assert.assertTrue(errMsg.isDisplayed());
+	}
+	
+	
+
+}
