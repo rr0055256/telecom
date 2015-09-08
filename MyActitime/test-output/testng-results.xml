@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Login successful!]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24210" started-at="2015-09-08T17:21:07Z" finished-at="2015-09-08T17:21:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24210" started-at="2015-09-08T17:21:07Z" finished-at="2015-09-08T17:21:31Z">
+      <class name="com.actitime.scripts.LoginLogout">
+        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:com.actitime.scripts.LoginLogout@42a4441e]" name="driverInitialization" is-config="true" duration-ms="10193" started-at="2015-09-08T22:51:07Z" finished-at="2015-09-08T22:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method status="PASS" signature="testActitimeLogin()[pri:0, instance:com.actitime.scripts.LoginLogout@42a4441e]" name="testActitimeLogin" duration-ms="406" started-at="2015-09-08T22:51:17Z" finished-at="2015-09-08T22:51:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Login successful!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testActitimeLogin -->
+        <test-method status="PASS" signature="testActitimeLogout()[pri:0, instance:com.actitime.scripts.LoginLogout@42a4441e]" name="testActitimeLogout" duration-ms="12544" started-at="2015-09-08T22:51:18Z" finished-at="2015-09-08T22:51:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActitimeLogout -->
+        <test-method status="PASS" signature="driverClose()[pri:0, instance:com.actitime.scripts.LoginLogout@42a4441e]" name="driverClose" is-config="true" duration-ms="1048" started-at="2015-09-08T22:51:30Z" finished-at="2015-09-08T22:51:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- com.actitime.scripts.LoginLogout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
